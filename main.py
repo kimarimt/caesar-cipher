@@ -1,6 +1,7 @@
 import string
 import os
 import time
+import art
 
 
 def clear():
@@ -12,6 +13,7 @@ def main():
     again = ''
 
     while again != 'no':
+        print(art.logo)
         option = input('Enter \'encode\' to encrypt, \'decode\' to decrypt: ')
         if option not in ['encode', 'decode']:
             print('invalid option: please choose encode or decode')
